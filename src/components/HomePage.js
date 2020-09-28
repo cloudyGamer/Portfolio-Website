@@ -67,7 +67,7 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                          leadClassName:"hexagon_light"
                     },
                     {
-                         title:"APIs",
+                         title:"PHP",
                          briefBody: "The idea of these API calls is to allow a user to migrate their products from the subscription based Shopify platform to the opensource and free OpenCart platform.",
                          body: "Click on an API to learn more",
                          className: "outer_hexagon_light",
