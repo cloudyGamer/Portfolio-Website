@@ -111,9 +111,9 @@ export const foreverMeDescription = () => {
              </div>  
                  )
           };
-export const APIDescription = () => {
-            return(
-            <div>
+//export const APIDescription = () => {
+//            return(
+//            <div>
                <div className="info_title">
                              API's
                </div>
@@ -121,8 +121,8 @@ export const APIDescription = () => {
                  The idea of these API calls is to allow a user to migrate their products from the subscription
                  based Shopify platform to the opensource and free OpenCart platform.
                </div>
-            </div>);
-            };          
+            </div>//);
+//            };          
 export const payPalAPIDescription = () => {
             return(
             <div>

@@ -13,7 +13,7 @@ import update from 'immutability-helper';
 import { foreverMeDescription,payPalAPIDescription,
      googleSheetsAPIDescription,ocAPIDescription,shopifyAPIDescription,
      symbolSmithDescription, budgetAppDescription,
-     nodeAppDescription, cssDescription, APIDescription
+     nodeAppDescription, cssDescription
 } from './projectContent';
 export default class HomePage extends React.Component {
      constructor(props) {
