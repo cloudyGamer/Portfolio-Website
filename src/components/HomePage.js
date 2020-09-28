@@ -493,7 +493,9 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                                                   </div>
                                            </div>
                                         </div>
-                                        <div className={this.highlightSubSymbol("ForeverMe","react_container mouseOver","react_container invisible")}>
+                                        <div className={this.highlightSubSymbol("ForeverMe","react_container mouseOver","react_container invisible")}
+                                        onClick={()=>this.windowOpen('https://github.com/cloudyGamer/Forever-Me')}
+                                        >
                                              <div className={this.highlightSubSymbol("ForeverMe","hexagons_container visible","hexagons_container invisible")} id="foreverMe"  onMouseOver={() => this.highlightProject("ForeverMe")}>
                                                   <div className="outer_hexagon_container">
                                                        <div className="outer_hexagon" ref={this.foreverMe}></div>
