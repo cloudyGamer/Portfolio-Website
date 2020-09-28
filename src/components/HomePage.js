@@ -13,7 +13,7 @@ import update from 'immutability-helper';
 import { foreverMeDescription,payPalAPIDescription,
      googleSheetsAPIDescription,ocAPIDescription,shopifyAPIDescription,
      symbolSmithDescription, budgetAppDescription,
-     nodeAppDescription, cssDescription
+     nodeAppDescription, cssDescription, APIDescription
 } from './projectContent';
 export default class HomePage extends React.Component {
      constructor(props) {
@@ -67,9 +67,9 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                          leadClassName:"hexagon_light"
                     },
                     {
-                         title:"PHP",
-                         briefBody: "sample body 3",
-                         body: "Here is info on the Budget App",
+                         title:"APIs",
+                         briefBody: "The idea of these API calls is to allow a user to migrate their products from the subscription based Shopify platform to the opensource and free OpenCart platform.",
+                         body: "Click on an API to learn more",
                          className: "outer_hexagon_light",
                          leadClassName:"hexagon_light",
                          subGroup: [
