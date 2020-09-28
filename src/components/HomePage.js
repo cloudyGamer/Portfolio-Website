@@ -610,7 +610,7 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                                                     <div className="hexagon_container">
                                                          <div className={this.displayAPISubClasses('PHP','payPal')}>
                                                               <div className="payPal symbol">
-                                                                   <img src="assets/payPal_logo_blue.png"/>
+                                                                   <img src="assets/paypal_logo_blue.png"/>
                                                               </div>
                                                          </div>
                                                     </div>
