@@ -1,0 +1,31 @@
+
+@font-face {font-family: "Fauna One"; 
+    src: url("//db.onlinewebfonts.com/t/7d569d1945925cd6bd9740686c627ddb.eot"); 
+    src: url("//db.onlinewebfonts.com/t/7d569d1945925cd6bd9740686c627ddb.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/7d569d1945925cd6bd9740686c627ddb.woff2") 
+    format("woff2"), url("//db.onlinewebfonts.com/t/7d569d1945925cd6bd9740686c627ddb.woff") 
+    format("woff"), url("//db.onlinewebfonts.com/t/7d569d1945925cd6bd9740686c627ddb.ttf") 
+    format("truetype"), url("//db.onlinewebfonts.com/t/7d569d1945925cd6bd9740686c627ddb.svg#Fauna One") format("svg"); }
+
+html{
+    font-size: 62.5%
+}
+                            
+body {
+    font-family: 'Karla',sans-serif;
+    font-size: $m-size;
+    background-color: $baseColor;
+}
+
+button {
+    cursor:pointer;
+}
+
+buttondisabled {
+    cursor: default;
+}
+
+.is-active {
+    font-weight: bold;
+}
