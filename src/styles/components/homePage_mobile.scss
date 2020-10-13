@@ -14,6 +14,15 @@
        justify-content: center;
        display: flex;
     }
+    .flex_budget {
+    flex-direction:row;
+    justify-content: flex-start;
+    display: flex;
+    }
+    .jest_list{
+        position:block;
+        left:0rem;
+    }
     .text_section{
         margin-bottom:1rem;
     }
@@ -416,11 +425,8 @@
     
     .link {
         position:relative;
-        //padding-left:0.5rem;
-        //padding-top:0.7rem;
-        //display:flex;
-        //align-items: center;
         font-size:1rem;
+        display:block;
         
     }
     

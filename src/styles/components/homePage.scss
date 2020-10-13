@@ -1,4 +1,18 @@
-
+ .flex_center {
+       flex-direction:row;
+       justify-content: center;
+       display: flex;
+    }
+.jest_list{
+    position:relative;
+    left:3.5rem;
+}
+.flex_budget {
+    flex-direction:row;
+    justify-content: center;
+    display: flex;
+}
+    
 .pyramidAndInfo_container {
     position:fixed;
     display: flex;
@@ -65,6 +79,15 @@ border-left: 2.6rem solid transparent;
     font-size: 1.7rem;
     font-family: "Karla";
     text-align: justify;
+    padding: 1rem 5rem 0rem 5rem;
+    color: #e0fffa;
+    //overflow:scroll;
+}
+
+.more_info_center{
+    font-size: 1.7rem;
+    font-family: "Karla";
+    text-align: center;
     padding: 1rem 5rem 0rem 5rem;
     color: #e0fffa;
     //overflow:scroll;
@@ -766,6 +789,15 @@ justify-content: space-around;
     margin: 0.25rem 0rem 0.25rem 0rem;
 }
 
-
+ .link {
+        position:relative;
+        font-size:1rem;
+        display:none;
+}
+    
+.link img {
+    width:2rem;
+    height:2rem;
+}
 
 

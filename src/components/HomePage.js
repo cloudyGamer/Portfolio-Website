@@ -347,6 +347,12 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                );
                
                if(matchingGroup.length!==0){
+                    let moreInfo;
+                    if(matchingGroup[0].title==="PHP"){
+                         moreInfo = "more_info_center";
+                    }else{
+                         moreInfo = "more_info";
+                    }
                     return (
                        <div className="info_container">
                            <div className="info_title">
@@ -358,7 +364,7 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                            <div className="arrow_container">
                               <div className="desc_arrow"></div>
                            </div>
-                           <div className="more_info">
+                           <div className={moreInfo}>
                               {matchingGroup[0].body} 
                            </div>
                     </div>)

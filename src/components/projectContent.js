@@ -77,24 +77,27 @@ export const foreverMeDescription = () => (
                      output of previous ones to function e.g payments cannot be processed without postage type having been selected
                      ; which in itself in preceeded by supply of a valid shipping address. Seperate PHP functions -
                     </p>
-                    <div className='phpFunctions'>
-                    <div className="phpFunction">&#8226; Generates an API user token to allow customer tracking</div>
-                    <div className="phpFunction">&#8226; and access to to OpenCarts API and functions</div>
-                    <div className="phpFunction">&#8226; Get product categories</div>
-                    <div className="phpFunction">&#8226; Get products corresponding to categories</div>
-                    <div className="phpFunction">&#8226; Add item to cart</div>
-                    <div className="phpFunction">&#8226; Get cart contents</div>
-                    <div className="phpFunction">&#8226; Display items in cart</div>
-                    <div className="phpFunction">&#8226; Create a new customer and register name, email and phone number</div>
-                    <div className="phpFunction">&#8226; Add shipping address</div>
-                    <div className="phpFunction">&#8226; Get available shipping methods</div>
-                    <div className="phpFunction">&#8226; Set shipping method</div>
-                    <div className="phpFunction">&#8226; Add payment address</div>
-                    <div className="phpFunction">&#8226; Add payment method</div>
-                    <div className="phpFunction">&#8226; Create order</div>
-                    <div className="phpFunction">&#8226; Forward payment information to PayPal</div>
-                    <div className="phpFunction">&#8226; Redirect user to payment portal</div>
+                    <div className='flex_center'>
+                         <div className='phpFunctions'>
+                         <div className="phpFunction">&#8226; Generates an API user token to allow customer tracking</div>
+                         <div className="phpFunction">&#8226; and access to to OpenCarts API and functions</div>
+                         <div className="phpFunction">&#8226; Get product categories</div>
+                         <div className="phpFunction">&#8226; Get products corresponding to categories</div>
+                         <div className="phpFunction">&#8226; Add item to cart</div>
+                         <div className="phpFunction">&#8226; Get cart contents</div>
+                         <div className="phpFunction">&#8226; Display items in cart</div>
+                         <div className="phpFunction">&#8226; Create a new customer and register name, email and phone number</div>
+                         <div className="phpFunction">&#8226; Add shipping address</div>
+                         <div className="phpFunction">&#8226; Get available shipping methods</div>
+                         <div className="phpFunction">&#8226; Set shipping method</div>
+                         <div className="phpFunction">&#8226; Add payment address</div>
+                         <div className="phpFunction">&#8226; Add payment method</div>
+                         <div className="phpFunction">&#8226; Create order</div>
+                         <div className="phpFunction">&#8226; Forward payment information to PayPal</div>
+                         <div className="phpFunction">&#8226; Redirect user to payment portal</div>
+                         </div>
                     </div>
+                    
 
                     <p></p>
                     <div className='react_image'>
@@ -185,7 +188,7 @@ export const googleSheetsAPIDescription = () => {
                <div className="info_title">
                              Google Sheets
                </div>
-               <p>An alternative way to download product data from google's merchant centre feed. Images are downloaded from src's 
+               <p style={{"textAlign":"center"}}>An alternative way to download product data from google's merchant centre feed. Images are downloaded from src's 
                and base 64 encoded.
                </p>
             </div>);
@@ -236,59 +239,69 @@ export const budgetAppDescription = () => (
                </div>
                
                <div className='subHeading'>General</div>
-               <div className='phpFunctions'>
-               <div className="phpFunction">&#8226;Routing</div>
-               <div className="phpFunction">&#8226;ES6 Object and Array Destructuring</div>
-               <div className="phpFunction">&#8226;Implicitly returned JSX </div>
-               <div className="phpFunction">&#8226;Sass </div>
-               <div className="phpFunction">&#8226; Deployment via Heroku and Node</div>
-               <div className="phpFunction">&#8226; Libraries used include Moment</div>
-               <div className="phpFunction">&#8226; contains server, development version and production version for fast deployment and local testing</div>
+               <div className='flex_center'>
+                    <div className='phpFunctions'>
+                    <div className="phpFunction">&#8226;Routing</div>
+                    <div className="phpFunction">&#8226;ES6 Object and Array Destructuring</div>
+                    <div className="phpFunction">&#8226;Implicitly returned JSX </div>
+                    <div className="phpFunction">&#8226;Sass </div>
+                    <div className="phpFunction">&#8226; Deployment via Heroku and Node</div>
+                    <div className="phpFunction">&#8226; Libraries used include Moment</div>
+                    <div className="phpFunction">&#8226; contains server, development version and production version for fast deployment and local testing</div>
+                    </div>
                </div>
+               
                
                <div className='subHeading'>Redux</div>
-              
-               <div className='phpFunctions'>
-               <div className="phpFunction">&#8226; Higher order components</div>
-               <div className="phpFunction">&#8226; Actions</div>
-               <div className="phpFunction">&#8226; Reducers</div>
-               <div className="phpFunction">&#8226; Combiner</div>
-               <div className="phpFunction">&#8226; Selectors</div>
-               <div className="phpFunction">&#8226; Connected Store</div>
+               <div className='flex_budget'>
+                    <div className='phpFunctions'>
+                    <div className="phpFunction">&#8226; Higher order components</div>
+                    <div className="phpFunction">&#8226; Actions</div>
+                    <div className="phpFunction">&#8226; Reducers</div>
+                    <div className="phpFunction">&#8226; Combiner</div>
+                    <div className="phpFunction">&#8226; Selectors</div>
+                    <div className="phpFunction">&#8226; Connected Store</div>
+                    </div>
                </div>
                
-               <div className='subHeading'>Jest & Enzyme</div>
                
-               <div className='phpFunctions'>
-               <div className="phpFunction">&#8226; Fixtures</div>
-               <div className="phpFunction">&#8226; Mocked Libraries</div>
-               <div className="phpFunction">&#8226; Snapshot testing</div>
-               <div className="phpFunction">&#8226; Spies</div>
-               <div className="phpFunction">&#8226; Testing of User Interaction,</div>
-               <div className="phpFunction">Combiners,</div>
-               <div className="phpFunction">Reucers,</div>
-               <div className="phpFunction">Actions,</div>
-               <div className="phpFunction">Filters,</div>
-               <div className="phpFunction">Selectors,</div>
-               <div className="phpFunction">Adding, editing and filtering expenses</div>
+       <div className='subHeading' >Jest & Enzyme</div>
+               <div className='flex_budget'>
+                    <div className='phpFunctions jest_list'>
+                    <div className="phpFunction">&#8226; Fixtures</div>
+                    <div className="phpFunction">&#8226; Mocked Libraries</div>
+                    <div className="phpFunction">&#8226; Snapshot testing</div>
+                    <div className="phpFunction">&#8226; Spies</div>
+                    <div className="phpFunction">&#8226; Testing of User Interaction,</div>
+                    <div className="phpFunction">Combiners,</div>
+                    <div className="phpFunction">Reucers,</div>
+                    <div className="phpFunction">Actions,</div>
+                    <div className="phpFunction">Filters,</div>
+                    <div className="phpFunction">Selectors,</div>
+                    <div className="phpFunction">Adding, editing and filtering expenses</div>
 
+                    </div>
                </div>
+               
             </div>  
             );
           
 export const nodeAppDescription = () => (
      <div>
         <div className='subHeading'>Features</div>
-        <div className='phpFunctions'>
-             <div className="phpFunction">&#8226;Handling User Input</div>
-             <div className="phpFunction">&#8226;Argument parsing with Yargs</div>
-             <div className="phpFunction">&#8226;Creating, reading, listing and removing user notes</div>
-             <div className="phpFunction">&#8226;Debugging</div>
-             <div className="phpFunction">&#8226;Asynchronous API calls</div>
-             <div className="phpFunction">&#8226;Modules</div>
-             <div className="phpFunction">&#8226;Error Handling</div>
-             <div className="phpFunction">&#8226;Callback Chanining</div>
+        <div className='flex_center'>
+          <div className='phpFunctions'>
+               <div className="phpFunction">&#8226;Handling User Input</div>
+               <div className="phpFunction">&#8226;Argument parsing with Yargs</div>
+               <div className="phpFunction">&#8226;Creating, reading, listing and removing user notes</div>
+               <div className="phpFunction">&#8226;Debugging</div>
+               <div className="phpFunction">&#8226;Asynchronous API calls</div>
+               <div className="phpFunction">&#8226;Modules</div>
+               <div className="phpFunction">&#8226;Error Handling</div>
+               <div className="phpFunction">&#8226;Callback Chanining</div>
+          </div>
         </div>
+        
 
      </div>  
             );
