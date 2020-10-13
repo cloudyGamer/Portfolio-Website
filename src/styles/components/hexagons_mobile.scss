@@ -1,0 +1,209 @@
+@media screen and (max-width: 500px){
+.hexagons_container {
+    margin: 
+        0rem 
+        (((1rem*$honeycomb-mobile-scale)-(1rem*$honeycomb-border-mobile-width))/4)*$honeycomb_distance_horizontal_mobile 
+        0rem 
+        (((1rem*$honeycomb-mobile-scale)-(1rem*$honeycomb-border-mobile-width))/4)*$honeycomb_distance_horizontal_mobile;
+    }
+
+    .hexagons_container_light {
+    margin: 
+        0rem 
+        (((2rem*$honeycomb-mobile-scale)-(2rem*$honeycomb-border-mobile-width))/4)*$honeycomb_distance_horizontal_mobile 
+        0rem 
+        (((2rem*$honeycomb-mobile-scale)-(2rem*$honeycomb-border-mobile-width))/4)*$honeycomb_distance_horizontal_mobile;
+    }
+    .hexagon {
+      width: 1rem*$honeycomb-border-mobile-width; //reverse order
+      height: 0.57735rem*$honeycomb-border-mobile-width;
+      background: $inner_honeycomb_color;
+      position: relative;
+    }
+    .hexagon::before {
+      content: "";
+      position: absolute;
+      top: -0.288675rem*$honeycomb-border-mobile-width;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+      border-right: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+      border-bottom: 0.288675rem*$honeycomb-border-mobile-width solid $inner_honeycomb_color;
+    }
+    .hexagon::after {
+      content: "";
+      position: absolute;
+      bottom: -0.288675rem*$honeycomb-border-mobile-width;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+      border-right: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+      border-top: 0.288675rem*$honeycomb-border-mobile-width solid $inner_honeycomb_color;
+    }
+
+        .hexagon_light {
+          width: 1rem*$honeycomb-border-mobile-width; //reverse order
+          height: 0.57735rem*$honeycomb-border-mobile-width;
+          background: $inner_honeycomb_color_light;
+          position: relative;
+        }
+        .hexagon_light::before {
+          content: "";
+          position: absolute;
+          top: -0.288675rem*$honeycomb-border-mobile-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-bottom: 0.288675rem*$honeycomb-border-mobile-width solid $inner_honeycomb_color_light;
+        }
+        .hexagon_light::after {
+          content: "";
+          position: absolute;
+          bottom: -0.288675rem*$honeycomb-border-mobile-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-top: 0.288675rem*$honeycomb-border-mobile-width solid $inner_honeycomb_color_light;
+        }
+
+        .hexagon_highlight {
+          width: 1rem*$honeycomb-border-mobile-width; //reverse order
+          height: 0.57735rem*$honeycomb-border-mobile-width;
+          background: $inner_honeycomb_color_highlight;
+          position: relative;
+        }
+
+        .hexagon_highlight::before {
+          content: "";
+          position: absolute;
+          top: -0.288675rem*$honeycomb-border-mobile-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-bottom: 0.288675rem*$honeycomb-border-mobile-width solid $inner_honeycomb_color_highlight;
+        }
+        .hexagon_highlight::after {
+          content: "";
+          position: absolute;
+          bottom: -0.288675rem*$honeycomb-border-mobile-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-top: 0.288675rem*$honeycomb-border-mobile-width solid $inner_honeycomb_color_highlight;
+        }
+        .subHexagon_highlight {
+          width: 1rem*$honeycomb-border-mobile-width; //reverse order
+          height: 0.57735rem*$honeycomb-border-mobile-width;
+          background: $inner_honeycomb_color_highlight_sub;
+          position: relative;
+        }
+        .subHexagon_highlight::before {
+          content: "";
+          position: absolute;
+          top: -0.288675rem*$honeycomb-border-mobile-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-bottom: 0.288675rem*$honeycomb-border-mobile-width solid $inner_honeycomb_color_highlight_sub;
+        }
+        .subHexagon_highlight::after {
+          content: "";
+          position: absolute;
+          bottom: -0.288675rem*$honeycomb-border-mobile-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-mobile-width solid transparent;
+          border-top: 0.288675rem*$honeycomb-border-mobile-width solid $inner_honeycomb_color_highlight_sub;
+        }
+    .outer_hexagon {
+      width: 1rem*$honeycomb-mobile-scale;
+      height: 0.57735rem*$honeycomb-mobile-scale;
+      background: $outer_honeycomb_color;
+      position: relative;
+    }
+    .outer_hexagon::before {
+      content: "";
+      position: absolute;
+      top: -0.288675rem*$honeycomb-mobile-scale;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem*$honeycomb-mobile-scale solid transparent;
+      border-right: 0.5rem*$honeycomb-mobile-scale solid transparent;
+      border-bottom: 0.288675rem*$honeycomb-mobile-scale solid $outer_honeycomb_color;
+    }
+    .outer_hexagon::after {
+      content: "";
+      position: absolute;
+      bottom: -0.288675rem*$honeycomb-mobile-scale;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem*$honeycomb-mobile-scale solid transparent;
+      border-right: 0.5rem*$honeycomb-mobile-scale solid transparent;
+      border-top: 0.288675rem*$honeycomb-mobile-scale solid $outer_honeycomb_color;
+    }
+
+        .outer_hexagon_light {
+          width: 1rem*$honeycomb-mobile-scale;
+          height: 0.57735rem*$honeycomb-mobile-scale;
+          background: $outer_honeycomb_color_light;
+          position: relative;
+        }
+        .outer_hexagon_light::before {
+          content: "";
+          position: absolute;
+          top: -0.288675rem*$honeycomb-mobile-scale;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-mobile-scale solid transparent;
+          border-right: 0.5rem*$honeycomb-mobile-scale solid transparent;
+          border-bottom: 0.288675rem*$honeycomb-mobile-scale solid $outer_honeycomb_color_light;
+        }
+        .outer_hexagon_light::after {
+          content: "";
+          position: absolute;
+          bottom: -0.288675rem*$honeycomb-mobile-scale;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-mobile-scale solid transparent;
+          border-right: 0.5rem*$honeycomb-mobile-scale solid transparent;
+          border-top: 0.288675rem*$honeycomb-mobile-scale solid $outer_honeycomb_color_light;
+    }
+
+    .hexagon_container{
+     position: relative;
+     left:((1rem*$honeycomb-mobile-scale)-(1rem*$honeycomb-border-mobile-width))/2;
+     //left: 0.85rem;
+     bottom: -((0.57735rem*$honeycomb-mobile-scale)-(0.57735rem*$honeycomb-border-mobile-width))/2;
+     //background-color:red;
+     //width: 100px;
+     //height:60px;
+    }
+
+    .outer_hexagon_container {
+     z-index: -1;
+     position: absolute;
+     //left: 100px*$honeycomb-mobile-scale;
+     //bottom: 57.735px*$honeycomb-mobile-scale;
+     //background-color: green;
+     //width: 120px;
+     //height:65px;
+    }
+}

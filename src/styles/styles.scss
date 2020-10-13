@@ -1,6 +1,11 @@
 @import './base/settings';
 @import './base/base';
 @import './components/homePage';
+@import './components/homePage_mobile';
+@import './components/hexagons_mobile';
+@import './components/symbols_mobile';
+@import './components/hexagons_single';
+@import './components/symbols_single';
 @import url(//db.onlinewebfonts.com/c/7d569d1945925cd6bd9740686c627ddb?family=Fauna+One);
 .header_title {
     font-family: "Fauna One";

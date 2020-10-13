@@ -5,15 +5,12 @@
   */
 
 import React from 'react'; 
-import { connect } from 'react-redux';
 import highlightProject  from '../actions/portfolio';
-import ExpenseList from './ExpenseList';
-import ExpenseListFilters from './ExpenseListFilters';
 import update from 'immutability-helper';
 import { foreverMeDescription,payPalAPIDescription,
      googleSheetsAPIDescription,ocAPIDescription,shopifyAPIDescription,
      symbolSmithDescription, budgetAppDescription,
-     nodeAppDescription, cssDescription
+     nodeAppDescription, cssDescription,setProject
 } from './projectContent';
 export default class HomePage extends React.Component {
      constructor(props) {
@@ -39,8 +36,10 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
 
 
           this.state = {
+               activeProject: "Node JS",
                foreverMe: "outer_hexagon_light",
                currentProject:"none",
+               viewStyle:null,
                projects: [
                      {
                          title:"ForeverMe",
@@ -99,7 +98,17 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                ]
           }
      }
-               
+     
+          componentDidMount(){
+               const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+               if (vw<600) {
+                    this.setState({viewStyle:"mobile"});
+               }else{
+                    this.setState({viewStyle:"desktop"});
+               }
+
+          } 
+          
           highlightProject = (id) => {
           console.log("id="+id);
            //access state
@@ -355,7 +364,7 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                     </div>)
                }
           }
-
+          
           showDescriptionHandler = () => {
                const projects = this.state.projects;
                //find correct group
@@ -385,8 +394,362 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                }else{
                     return this.showDescription();
                };
-          }; 
+          };
           
+          showMobileDescription = (title,projects) => {
+               console.log('showMobileDescription ran with title '+title);
+                //access state
+                //combine subgroups and group into one group with no nesting
+                    //access subgroup
+               const subGroupParent = projects.filter(
+                    (project) => project.title === "PHP"
+               );
+               //console.log(JSON.stringify(subGroupParent[0].title));
+               const subGroup = subGroupParent[0].subGroup;
+
+               //subGroup.map((subGroup) => {console.log(subGroup.title)});
+               const unnestedProjects = [...subGroup,...projects];
+               //unnestedProjects.map((subGroup) => {console.log(subGroup.title)});
+               //find correct group
+               const matchingGroup = unnestedProjects.filter(
+                    (project) => project.title === title
+               );
+               
+               let fnc;
+               let moreInfo;
+               if(title==="ForeverMe"){
+                 fnc = this.mobileFMDesc();  
+                 moreInfo = "more_info text-justify";
+               }else if(title==="Budget App"){
+                 fnc = this.mobileBudgDesc();
+                  moreInfo = "more_info text-justify";
+               } else if (title==="PHP"||title==="oc_api"||title==="google_sheets"||title==="payPal"||title==="shopify"){
+                 fnc = this.mobileAPIDesc();  
+                  moreInfo = "more_info text-center";
+               }else if(title==="SymbolSmith"){
+                 fnc = this.mobileSSDesc();
+                 moreInfo = "more_info text-center";
+               }else if(title==="Node JS"){
+                 fnc = this.mobileNodeDesc();
+                 moreInfo = "more_info text-justify";
+               }else if(title==="CSS"){
+                 fnc = this.mobileCSSDesc();
+                 moreInfo = "more_info text-center";
+               }else{ return null}/*else if{
+                    
+               }*/
+               if(matchingGroup.length!==0){
+                    return (
+                      <div>
+                         {fnc}
+                        <div className="info_container">
+                        {(title==="ForeverMe"||title==="Budget App"||title==="PHP"||title==="SymbolSmith"||title==="Node JS"||title==="CSS")&&
+                          <div>
+                              <div className="info_title">
+                                 {matchingGroup[0].title}
+                              </div>
+                               <div className="info_brief_description">
+                                 {matchingGroup[0].briefBody}
+                              </div>
+                           </div>}
+                           <div className="arrow_container">
+                              <div className="desc_arrow"></div>
+                           </div>
+                           <div className={moreInfo}>
+                              {matchingGroup[0].body} 
+                           </div>
+                         </div>
+                      </div>  
+  
+                   );
+               }
+          };
+
+          
+          mobileFMDesc = () => (
+          <div className="symbol_group_fm">
+               
+                   <div className="flex_fm" ><div className="links_label_api">Links</div></div>
+                    <div className='flex_fm' style={{marginBottom:"1.5rem"}}>
+                         <div className="foreverMe_container">
+                           <div xmlns="http://www.w3.org/1999/xhtml" className="hexagons_container"
+                           onClick={()=>this.windowOpen('https://fullstackanov.herokuapp.com/')}
+                           >
+                                  <div className="outer_hexagon_container">
+                                       <div className="outer_hexagon" ></div>
+                                  </div>
+                                  <div className="hexagon_container">
+                                    <div className={"hexagon_light"}>
+                                         <div className="foreverMe symbol mouseOver">
+                                                 <img src="assets/ForeverMe_logo_blue_1.png"/>
+                                         </div>
+                                         <div className="app_label">App</div>
+                                    </div>
+                                  </div>
+                           </div>
+                         </div>
+                    </div>
+
+                    <div className='flex_center' style={{marginBottom:"4.5rem"}}>
+                           <div className={"oc_container mouseOver"}>
+                              <div className={"hexagons_container visible"}   
+                              onClick={()=>this.windowOpen('https://github.com/cloudyGamer/Open-Cart/commit/424a3aef5e679398d00bf0d9dcd53ca6e989b6cb#diff-76ee3de97a1b8b903319b7c013d8c877')}
+                              >
+                                   <div className="outer_hexagon_container">
+                                        <div className="outer_hexagon" ></div>
+                                   </div>
+                                   <div className="hexagon_container">
+                                        <div className="hexagon_light">
+                                             <div className="trello symbol">
+                                                  <img src="assets/opencart_logo_2.png"/>
+                                             </div>
+                                             <div className="ocLabel">Open Cart</div>
+                                        </div>
+                                   </div>
+                            </div>
+                         </div>
+                         <div className={"react_container mouseOver"}
+                         onClick={()=>this.windowOpen('https://github.com/cloudyGamer/Forever-Me')}
+                         >
+                              <div className={"hexagons_container visible"}>
+                                   <div className="outer_hexagon_container">
+                                        <div className="outer_hexagon" ></div>
+                                   </div>
+                                   <div className="hexagon_container">
+                                        <div className="hexagon_light">
+                                             <div className="trello symbol">
+                                                  <img src="assets/react_logo_blue.png"/>
+                                             </div>
+                                             <div className={'reactLabel'}>React</div>
+                                        </div>
+                                   </div>
+                            </div>
+                         </div>
+                    </div>
+                    
+                     <div className='flex_fm'>
+                         <div className={"trello_container mouseOver"}
+                         onClick={()=>this.windowOpen('https://trello.com/b/SfBz7fXN/forever-me-app')}
+                         >
+                              <div className={"hexagons_container visible"}>
+                                   <div className="outer_hexagon_container">
+                                        <div className="outer_hexagon" ></div>
+                                   </div>
+                                   <div className="hexagon_container">
+                                        <div className="hexagon_light">
+                                             <div className="trello symbol">
+                                                  <img src="assets/trello_blue.png"/>
+                                             </div>
+                                             <div className="trelloLabel">Trello</div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                   </div>
+               
+          </div>  
+          );
+        
+          mobileBudgDesc = () => (
+            <div className="symbol_group_budg">
+               <div className="flex"><div className="links_label">Links</div></div>
+               <div className="flex">
+                    <div className="hexagons_container mouseOver"
+                         onClick={()=>this.windowOpen('https://react-course-projects-budget.herokuapp.com/')}
+                         >
+                          <div className="outer_hexagon_container">
+                               <div className="outer_hexagon" ref={this.budget}></div>
+                          </div>
+                          <div className="hexagon_container">
+                               <div className={'hexagon_light'}>
+                                    <div className="budget symbol">
+                                        <img src="assets/budget_blue_1.png"/>
+                                   </div>
+                                   <div className="app_label_budg">App</div>
+                                </div> 
+                          </div>
+                     </div>
+                </div>
+                
+               <div className="flex">
+                    <div  ref={this.redux} className={'hexagons_container mouseOver'}
+                    onClick={()=>this.windowOpen('https://github.com/cloudyGamer/Budget-App/tree/master/src')}
+                    >
+                         <div className="outer_hexagon_container">
+                              <div className={'outer_hexagon'}></div>
+                         </div>
+                         <div className="hexagon_container">
+                              <div className="hexagon_light">
+                                   <div className="redux symbol">
+                                       <img src={"assets/redux_logo_blue.png"}/>
+                                  </div> 
+                                  <div className={'reduxLabel visible'}>Redux</div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div className={'hexagons_container mouseOver'} ref={this.jest}
+                    onClick={()=>this.windowOpen('https://github.com/cloudyGamer/Budget-App/tree/master/src/tests')}
+                    >
+                         <div className="outer_hexagon_container">
+                              <div className={'outer_hexagon'}></div>
+                         </div>
+                         <div className="hexagon_container">
+                              <div className="hexagon">
+                                  <div className="jest symbol">
+                                      <img src={"assets/jest_blue_2.png"}/>
+                                  </div> 
+                                  <div className={'jestLabel visible'}>Jest</div>
+                               </div>
+                         </div>
+                    </div>
+               </div>
+            </div>  
+
+            );
+          
+          mobileAPIDesc = () => (
+            <div className='symbol_group_fm'>
+          
+               <div className="flex_fm"><div className="links_label_api">Links</div></div>
+               <div className='flex_fm' style={{marginBottom:"1.5rem"}}>
+                    <div className="foreverMe_container">
+                     <div xmlns="http://www.w3.org/1999/xhtml" className="hexagons_container"
+                      onClick={()=>{this.setState({activeProject:"payPal"})}}
+                     >
+                            <div className="outer_hexagon_container">
+                                 <div className="outer_hexagon" ></div>
+                            </div>
+                            <div className="hexagon_container">
+                              <div className={"hexagon_light"}>
+                                   <div className="payPal symbol mouseOver">
+                                           <img src="assets/paypal_logo_blue.png"/>
+                                   </div>
+                                   <div className="pp_label">PayPal</div>
+                              </div>
+                            </div>
+                     </div>
+                   </div>    
+               </div>
+               
+               <div className='flex_center' style={{marginBottom:"4.5rem"}}>
+                    <div className={"oc_container mouseOver"}>
+                        <div className={"hexagons_container visible"}
+                        onClick={()=>{this.setState({activeProject:"oc_api"})}}
+                        >
+                             <div className="outer_hexagon_container">
+                                  <div className="outer_hexagon" ></div>
+                             </div>
+                             <div className="hexagon_container">
+                                  <div className="hexagon_light">
+                                       <div className="trello symbol">
+                                            <img src="assets/opencart_logo_2.png"/>
+                                       </div>
+                                       <div className="ocLabel">Open Cart</div>
+                                  </div>
+                             </div>
+                      </div>
+                   </div>
+                   <div className={"react_container mouseOver"}
+                   onClick={()=>{this.setState({activeProject:"google_sheets"})}}
+                   >
+                        <div className={"hexagons_container visible"}>
+                             <div className="outer_hexagon_container">
+                                  <div className="outer_hexagon" ></div>
+                             </div>
+                             <div className="hexagon_container">
+                                  <div className="hexagon_light">
+                                       <div className="trello symbol">
+                                            <img src="assets/google_sheets_blue_2.png"/>
+                                       </div>
+                                       <div className={'gs_label'}>Google Sheets</div>
+                                  </div>
+                             </div>
+                      </div>
+                   </div>    
+               </div>
+
+               <div className='flex_fm'>
+                    <div className={"trello_container mouseOver"}
+                   onClick={()=>{this.setState({activeProject:"shopify"})}}
+                   >
+                        <div className={"hexagons_container visible"}>
+                             <div className="outer_hexagon_container">
+                                  <div className="outer_hexagon" ></div>
+                             </div>
+                             <div className="hexagon_container">
+                                  <div className="hexagon_light">
+                                       <div className="trello symbol">
+                                            <img src="assets/shopify_logo_blue.png"/>
+                                       </div>
+                                       <div className="trelloLabel">Shopify</div>
+                                  </div>
+                             </div>
+                      </div>
+                   </div>                                                         
+               </div>
+               
+            </div>  
+
+               );
+          mobileSSDesc = () => (
+          <div>
+               <div className='flex_fm' style={{marginTop:"5.5rem"}}>
+                    <div className="hexagons_single_container mouseOver"  
+                         onClick={()=>this.windowOpen('https://github.com/cloudyGamer/SymbolSmith')}>
+                         <div className="outer_hexagon_single_container">
+                              <div className="outer_hexagon_single"></div>
+                         </div>
+                         <div className="hexagon_single_container">
+                              <div className={"hexagon_single_light"}>
+                                   <div className="symbolsmith symbol">
+                                       <img src="assets/symbolsmith_blue.png"/>
+                                  </div> 
+                               </div>
+                         </div>
+                    </div>    
+               </div>
+          </div>
+          );
+          mobileNodeDesc = () => (
+          <div>
+               <div className='flex_fm' style={{marginTop:"5.5rem"}}>
+                    <div className="hexagons_single_container mouseOver"  
+                         onClick={()=>this.windowOpen('https://github.com/cloudyGamer/Node-Apps')}>
+                         <div className="outer_hexagon_single_container">
+                              <div className="outer_hexagon_single"></div>
+                         </div>
+                         <div className="hexagon_single_container">
+                              <div className={"hexagon_single_light"}>
+                                   <div className="symbolsmith symbol">
+                                       <img src="assets/nodejs_blue.png"/>
+                                  </div> 
+                               </div>
+                         </div>
+                    </div>        
+               </div>
+               
+          </div>
+          );
+          mobileCSSDesc = () => (
+          <div>
+               <div className='flex_fm' style={{marginTop:"5.5rem"}}>
+                    <div className="hexagons_single_container mouseOver ">
+                         <div className="outer_hexagon_single_container">
+                              <div className="outer_hexagon_single"></div>
+                         </div>
+                         <div className="hexagon_single_container">
+                              <div className={"hexagon_single_light"}>
+                                   <div className="symbolsmith symbol">
+                                       <img src="assets/css_blue_2.png"/>
+                                  </div> 
+                               </div>
+                         </div>
+                    </div>         
+               </div>
+               
+          </div>
+          );
           fastCoding = () => (
             <div>
                <div>Picture of MVC Chart</div>
@@ -400,25 +763,11 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
             </div>  
           );
           
-          budgetAppDescription = () => (
-            <div>
-               <div>
-                 This an expenses planning app I created primarily to show proficiency in Redux,Jest and Enzyme.
-               </div>
-               <p>new type of componen information handling; get name</p>
-               <div>The App gives the user the ability to add, edit and remove expense. User can also
-                search for Expenses by title, by date or within a date range with results filtered accordingly. 
-               </div>
-               <div>It features Spread Operators, implicitly returned JSX</div>
-               <div>Libraries used include Moment, Sass ()</div>
-               <p>contains server, development versiona and production version for fast deployment and local testing</p>
-
-               <div>Heroku</div>
-            </div>  
-            );
           windowOpen = (link) => {
+               console.log("window open fired");
                window.open(link);
           };
+          
           onDescriptionChange = (e) => {
               const description = e.target.value;
               this.setState(() => ({ description }));
@@ -426,23 +775,45 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
         
         render() {
           const uniqueMessage = 'HomePage: ';
+          //const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+          //console.log("active project"+this.state.activeProject);
+          //console.log("width"+vw);
           //console.log(uniqueMessage+'state is...'+JSON.stringify(this.state.projects));
           //const rerendered = console.log("rerendered");
           const foreverMe = this.state.projects[0].className;
           const foreverMeLeadClass = this.state.projects[0].leadClassName;
           const budgetLeadClass = this.state.projects[1].leadClassName;
-
+          const activeProject = this.state.activeProject;
           //console.log(uniqueMessage+budgetLeadClass);
           //const budget = this.state.projects.budget.className;
           const budget = "outer_hexagon";
           //console.log("class ="+this.state.projects[0].leadSubClassName);
-          return(
+          if(this.state.viewStyle==="mobile"){console.log("mobile width");
+               return(
+          <div xmlns="http://www.w3.org/1999/xhtml">
+               <div className="sub_headings_mobile">
+                    <div onClick={()=>{this.setState({activeProject:"ForeverMe"})}}>ForeverMe</div>
+                    <div onClick={()=>{this.setState({activeProject:"Budget App"})}}>Budget App</div>
+                    <div onClick={()=>{this.setState({activeProject:"PHP"})}}>APIs</div>
+                    <div onClick={()=>{this.setState({activeProject:"SymbolSmith"})}}>SymbolSmith</div>
+                    <div onClick={()=>{this.setState({activeProject:"CSS"})}}>CSS</div>
+                    <div onClick={()=>{this.setState({activeProject:"Node JS"})}}>Node</div>
+               </div>
+              <div className='pyramidAndInfo_container' >
+               {this.showMobileDescription(activeProject,this.state.projects)}
+              </div>
+          </div>
+            );
+          }else{console.log("desktop width");
+               return(
           <div xmlns="http://www.w3.org/1999/xhtml">
               <div className='pyramidAndInfo_container' >
                     <div className="pyramid_container">
                          
                           <div className="portfolio_symbol_container">
-                           <div className="hexagons_container" id="foreverMe"  onMouseOver={() => this.highlightProject("ForeverMe")}>
+                           <div className="hexagons_container" id="foreverMe"  onMouseOver={() => this.highlightProject("ForeverMe")}
+                           onClick={()=>this.windowOpen('https://fullstackanov.herokuapp.com/')}
+                           >
                                   <div className="outer_hexagon_container">
                                        <div className="outer_hexagon" ref={this.foreverMe}></div>
                                   </div>
@@ -736,6 +1107,9 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                </div>
           </div>
             );
+          }
+
+          
     }  
     
 }

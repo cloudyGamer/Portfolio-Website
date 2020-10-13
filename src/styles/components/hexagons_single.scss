@@ -1,0 +1,209 @@
+@media screen and (max-width: 500px){
+    .hexagons_single_container {
+    margin: 
+        0rem 
+        (((1rem*$honeycomb-single-scale)-(1rem*$honeycomb-border-single-width))/4)*$honeycomb_distance_horizontal_single 
+        0rem 
+        (((1rem*$honeycomb-single-scale)-(1rem*$honeycomb-border-single-width))/4)*$honeycomb_distance_horizontal_single;
+    }
+
+    .hexagons_container_light {
+    margin: 
+        0rem 
+        (((2rem*$honeycomb-single-scale)-(2rem*$honeycomb-border-single-width))/4)*$honeycomb_distance_horizontal_single 
+        0rem 
+        (((2rem*$honeycomb-single-scale)-(2rem*$honeycomb-border-single-width))/4)*$honeycomb_distance_horizontal_single;
+    }
+    .hexagon_single {
+      width: 1rem*$honeycomb-border-single-width; //reverse order
+      height: 0.57735rem*$honeycomb-border-single-width;
+      background: $inner_honeycomb_color;
+      position: relative;
+    }
+    .hexagon_single::before {
+      content: "";
+      position: absolute;
+      top: -0.288675rem*$honeycomb-border-single-width;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem*$honeycomb-border-single-width solid transparent;
+      border-right: 0.5rem*$honeycomb-border-single-width solid transparent;
+      border-bottom: 0.288675rem*$honeycomb-border-single-width solid $inner_honeycomb_color;
+    }
+    .hexagon_single::after {
+      content: "";
+      position: absolute;
+      bottom: -0.288675rem*$honeycomb-border-single-width;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem*$honeycomb-border-single-width solid transparent;
+      border-right: 0.5rem*$honeycomb-border-single-width solid transparent;
+      border-top: 0.288675rem*$honeycomb-border-single-width solid $inner_honeycomb_color;
+    }
+
+        .hexagon_single_light {
+          width: 1rem*$honeycomb-border-single-width; //reverse order
+          height: 0.57735rem*$honeycomb-border-single-width;
+          background: $inner_honeycomb_color_light;
+          position: relative;
+        }
+        .hexagon_single_light::before {
+          content: "";
+          position: absolute;
+          top: -0.288675rem*$honeycomb-border-single-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-bottom: 0.288675rem*$honeycomb-border-single-width solid $inner_honeycomb_color_light;
+        }
+        .hexagon_single_light::after {
+          content: "";
+          position: absolute;
+          bottom: -0.288675rem*$honeycomb-border-single-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-top: 0.288675rem*$honeycomb-border-single-width solid $inner_honeycomb_color_light;
+        }
+
+        .hexagon_single_highlight {
+          width: 1rem*$honeycomb-border-single-width; //reverse order
+          height: 0.57735rem*$honeycomb-border-single-width;
+          background: $inner_honeycomb_color_highlight;
+          position: relative;
+        }
+
+        .hexagon_single_highlight::before {
+          content: "";
+          position: absolute;
+          top: -0.288675rem*$honeycomb-border-single-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-bottom: 0.288675rem*$honeycomb-border-single-width solid $inner_honeycomb_color_highlight;
+        }
+        .hexagon_single_highlight::after {
+          content: "";
+          position: absolute;
+          bottom: -0.288675rem*$honeycomb-border-single-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-top: 0.288675rem*$honeycomb-border-single-width solid $inner_honeycomb_color_highlight;
+        }
+        .subHexagon_highlight {
+          width: 1rem*$honeycomb-border-single-width; //reverse order
+          height: 0.57735rem*$honeycomb-border-single-width;
+          background: $inner_honeycomb_color_highlight_sub;
+          position: relative;
+        }
+        .subHexagon_highlight::before {
+          content: "";
+          position: absolute;
+          top: -0.288675rem*$honeycomb-border-single-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-bottom: 0.288675rem*$honeycomb-border-single-width solid $inner_honeycomb_color_highlight_sub;
+        }
+        .subHexagon_highlight::after {
+          content: "";
+          position: absolute;
+          bottom: -0.288675rem*$honeycomb-border-single-width;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-right: 0.5rem*$honeycomb-border-single-width solid transparent;
+          border-top: 0.288675rem*$honeycomb-border-single-width solid $inner_honeycomb_color_highlight_sub;
+        }
+    .outer_hexagon_single {
+      width: 1rem*$honeycomb-single-scale;
+      height: 0.57735rem*$honeycomb-single-scale;
+      background: $outer_honeycomb_color;
+      position: relative;
+    }
+    .outer_hexagon_single::before {
+      content: "";
+      position: absolute;
+      top: -0.288675rem*$honeycomb-single-scale;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem*$honeycomb-single-scale solid transparent;
+      border-right: 0.5rem*$honeycomb-single-scale solid transparent;
+      border-bottom: 0.288675rem*$honeycomb-single-scale solid $outer_honeycomb_color;
+    }
+    .outer_hexagon_single::after {
+      content: "";
+      position: absolute;
+      bottom: -0.288675rem*$honeycomb-single-scale;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem*$honeycomb-single-scale solid transparent;
+      border-right: 0.5rem*$honeycomb-single-scale solid transparent;
+      border-top: 0.288675rem*$honeycomb-single-scale solid $outer_honeycomb_color;
+    }
+
+        .outer_hexagon_single_light {
+          width: 1rem*$honeycomb-single-scale;
+          height: 0.57735rem*$honeycomb-single-scale;
+          background: $outer_honeycomb_color_light;
+          position: relative;
+        }
+        .outer_hexagon_single_light::before {
+          content: "";
+          position: absolute;
+          top: -0.288675rem*$honeycomb-single-scale;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-single-scale solid transparent;
+          border-right: 0.5rem*$honeycomb-single-scale solid transparent;
+          border-bottom: 0.288675rem*$honeycomb-single-scale solid $outer_honeycomb_color_light;
+        }
+        .outer_hexagon_single_light::after {
+          content: "";
+          position: absolute;
+          bottom: -0.288675rem*$honeycomb-single-scale;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 0.5rem*$honeycomb-single-scale solid transparent;
+          border-right: 0.5rem*$honeycomb-single-scale solid transparent;
+          border-top: 0.288675rem*$honeycomb-single-scale solid $outer_honeycomb_color_light;
+    }
+
+    .hexagon_single_container{
+     position: relative;
+     left:((1rem*$honeycomb-single-scale)-(1rem*$honeycomb-border-single-width))/2;
+     //left: 0.85rem;
+     bottom: -((0.57735rem*$honeycomb-single-scale)-(0.57735rem*$honeycomb-border-single-width))/2;
+     //background-color:red;
+     //width: 100px;
+     //height:60px;
+    }
+
+    .outer_hexagon_single_container {
+     z-index: -1;
+     position: absolute;
+     //left: 100px*$honeycomb-single-scale;
+     //bottom: 57.735px*$honeycomb-single-scale;
+     //background-color: green;
+     //width: 120px;
+     //height:65px;
+    }
+}

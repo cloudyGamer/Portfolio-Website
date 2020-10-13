@@ -1,0 +1,248 @@
+@media screen and (max-width: 500px){
+
+.symbol {
+    position: relative;
+    z-index: 2;
+    }
+
+.foreverMe {
+top: 1rem/10*$honeycomb-mobile-scale;
+right: 0.1rem/10*$honeycomb-mobile-scale;
+}
+
+.redux {
+top: 0rem/10*$honeycomb-mobile-scale;
+left: 2.5rem/10*$honeycomb-mobile-scale;
+}
+
+.redux img{
+height: 5rem/10*$honeycomb-mobile-scale;
+width: 5rem/10*$honeycomb-mobile-scale;
+}
+
+.foreverMe img {
+height: 4rem/10*$honeycomb-mobile-scale;
+width: 10rem/10*$honeycomb-mobile-scale;
+}
+
+.github {
+top: 0rem/10*$honeycomb-mobile-scale;
+left: 2.5rem/10*$honeycomb-mobile-scale;
+}
+
+.github img {
+height: 5rem/10*$honeycomb-mobile-scale;
+width: 5rem/10*$honeycomb-mobile-scale;
+}
+
+.jest {
+top: 0rem/10*$honeycomb-mobile-scale;
+left: 2.5rem/10*$honeycomb-mobile-scale;
+}
+
+.jest img {
+height: 5rem/10*$honeycomb-mobile-scale;
+width: 5rem/10*$honeycomb-mobile-scale;
+}
+
+.budget {
+top: 0rem/10*$honeycomb-mobile-scale;
+left: 2.5rem/10*$honeycomb-mobile-scale;
+}
+
+.budget img {
+height: 5rem/10*$honeycomb-mobile-scale;
+width: 5rem/10*$honeycomb-mobile-scale;
+}
+
+.php {
+bottom: 1rem/10*$honeycomb-mobile-scale;
+left: 1.2rem/10*$honeycomb-mobile-scale;
+}
+
+.php img {
+height: 7.5rem/10*$honeycomb-mobile-scale;
+width: 7.5rem/10*$honeycomb-mobile-scale;
+}
+.google_sheet {
+bottom: 0.6rem/10*$honeycomb-mobile-scale;
+left: 1.8rem/10*$honeycomb-mobile-scale;    
+}
+.google_sheet img {
+height: 6.5rem/10*$honeycomb-mobile-scale;
+width: 6.5rem/10*$honeycomb-mobile-scale;    
+}
+.payPal {
+bottom: 1rem/10*$honeycomb-mobile-scale;
+left: 1.2rem/10*$honeycomb-mobile-scale;    
+}
+.payPal img {
+height: 7.5rem/10*$honeycomb-mobile-scale;
+width: 7.5rem/10*$honeycomb-mobile-scale;    
+}
+.shopify {
+bottom: 1rem/10*$honeycomb-mobile-scale;
+left: 1.2rem/10*$honeycomb-mobile-scale;    
+}
+.shopify img {
+height: 7.5rem/10*$honeycomb-mobile-scale;
+width: 7.5rem/10*$honeycomb-mobile-scale;    
+}
+.oc_api {
+bottom: 1rem/10*$honeycomb-mobile-scale;
+left: 1.2rem/10*$honeycomb-mobile-scale;    
+}
+.oc_api img {
+height: 7.5rem/10*$honeycomb-mobile-scale;
+width: 7.5rem/10*$honeycomb-mobile-scale;    
+}
+
+.trello {
+    left:1.5rem/10*$honeycomb-mobile-scale;
+    bottom:0.85rem/10*$honeycomb-mobile-scale;
+}
+
+.trello img {
+    height:7rem/10*$honeycomb-mobile-scale;
+    width:7rem/10*$honeycomb-mobile-scale;
+}
+
+.reduxLabel {
+    top: 3.3rem/10*$honeycomb-mobile-scale;
+    position: relative;
+    font-size: 1.3rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3;
+}
+.red {
+    background-color: red;
+}
+.visible{
+    opacity: 1;
+    cursor: pointer;
+}
+.mouseOver {
+    cursor: pointer;
+}
+.invisible{
+    opacity: 0;
+    z-index:-1;
+    pointer-events: none;
+}
+.trelloLabel {
+    left: 4.5rem;
+    top: -7.8rem;
+    position: relative;
+    font-size: 1.5rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3;
+}
+
+.reactLabel {
+    left:4.6rem;
+    bottom: 7.8rem;
+    position: relative;
+    font-size: 1.5rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3;
+}
+
+.ocLabel {
+    left:4.3rem;
+    bottom: 7.8rem;
+    position: relative;
+    font-size: 1.1rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3;
+}
+
+.jestLabel {
+    top: 3.25rem/10*$honeycomb-mobile-scale;
+    position: relative;
+    font-size: 1.5rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3;
+}
+.gitLabel_1{
+    top: 2.8rem/10*$honeycomb-mobile-scale;
+    right: 0.7rem/10*$honeycomb-mobile-scale;
+    position: relative;
+    font-size: 1.5rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3;
+}
+.gitLabel_2{
+    top: 2.8rem/10*$honeycomb-mobile-scale;
+    right: 0.7rem/10*$honeycomb-mobile-scale;
+    position: relative;
+    font-size: 1.5rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3;
+}
+
+.gs_label {
+    left: 4.6rem;
+    bottom: 9.5rem;
+    position: relative;
+    font-size: 1.2rem;
+    transform: rotate(30deg);
+    color: #b9fff3;
+}
+
+.pp_label {
+    left:5rem;
+    bottom: 8rem;
+    position: relative;
+    font-size: 1.5rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3; 
+}
+.links_label {
+    left:0rem;
+    margin-bottom: 5.5rem;
+    position: relative;
+    font-size: 1.7rem/10*$honeycomb-mobile-scale;
+    color: #b9fff3; 
+}
+.links_label_api {
+    left:0rem;
+    padding-bottom: 7.5rem;
+    position: relative;
+    font-size: 1.7rem/10*$honeycomb-mobile-scale;
+    color: #b9fff3; 
+}
+.app_label {
+    left:5rem;
+    bottom: 5rem;
+    position: relative;
+    font-size: 1.5rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3; 
+}
+.app_label_budg {
+    left:5rem;
+    bottom: 5.5rem;
+    position: relative;
+    font-size: 1.5rem/10*$honeycomb-mobile-scale;
+    transform: rotate(30deg);
+    color: #b9fff3; 
+}
+.symbol_group_budg{
+    position:relative;
+    top: 0rem;
+    left:0rem;
+}
+.symbol_group_fm{
+    flex-direction: column;
+    position:relative;
+    bottom: 3rem;
+    left:0rem;
+    margin-bottom:-7rem;
+}
+
+.symbol_group_api {
+    position:relative;
+    bottom: 3rem;
+    left:0rem;
+}
+}

@@ -1,0 +1,434 @@
+@media screen and (max-width: 500px){
+    .flex_fm{
+        display:flex;
+        justify-content: center;
+    }
+    
+    .flex{
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    .flex_center {
+       flex-direction:row;
+       justify-content: center;
+       display: flex;
+    }
+    .text_section{
+        margin-bottom:1rem;
+    }
+    .pyramidAndInfo_container {
+        position:fixed;
+        display: flex;
+        flex-direction: column;
+        padding:0rem 0rem 0rem 0rem;
+        justify-content: space-around;
+        position: relative;
+        bottom: 1rem;
+        overflow-anchor: none;
+    }
+
+    .pyramid_container {
+    position:relative;
+    top:0rem;
+    left:0rem;
+    }
+    .shopifyAdjust{
+        left:0rem;
+        top:0rem;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .info_container {
+        position:relative;
+        top:10rem;
+        color:white;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+
+    .info_title {
+        font-size: 2.5rem;
+        font-family: "Fauna One";
+        text-align: center; 
+        color: #d5fff8;
+        display:flex;
+        justify-content: center;
+        padding-left: 0.5rem;
+        align-items: center;
+    }
+
+    .info_brief_description{
+        font-size: 1.7rem;
+        font-family: "Karla";
+        text-align: center;
+        padding: 1rem 1.5rem 0rem 1.5rem;
+        color: #e0fffa;
+    }
+    .arrow_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0rem 5rem 1rem 5rem;
+    }
+
+    .desc_arrow {
+    bottom: 0rem;
+    position:relative;
+    transform: rotate(45deg);
+    /*bottom:3rem*$honeycomb-scale;
+    left:10rem*$honeycomb-scale;*/
+    width: 0;
+    height: 0;
+    border-bottom: 2.6rem solid $outer_honeycomb_color_light;
+    border-left: 2.6rem solid transparent;   
+    }
+
+    .more_info{
+        font-size: 1.7rem;
+        font-family: "Karla";
+        padding: 1rem 1.5rem 0rem 1.5rem;
+        color: #e0fffa;
+        //overflow:scroll;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+        
+    .text-justify {
+        text-align: justify;
+    }
+
+    .portfolio_symbol_container {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        //background-color: blue;
+        margin: 0rem 0rem (2.88675rem*$honeycomb-scale)*$honeycomb_distance 0rem;
+    }
+    .trello_container {
+        width:10rem;
+        position:relative;
+        top:0rem;
+        right:0rem;
+        //top:1.4rem*$honeycomb-scale;
+        //padding-left:26.5rem*$honeycomb-scale;   
+    }
+    .react_container {
+        width:10rem;
+        position:relative;
+        left:0rem;
+        top:0rem;
+        //top:-3.1rem*$honeycomb-scale;
+        //padding-left:3.5rem*$honeycomb-scale;   
+    }
+     .oc_container {
+        width:10rem;
+        position:relative;
+        left:0rem;
+        bottom:0rem;
+        //top:1.5rem*$honeycomb-scale;
+        //padding-left:0.1rem*$honeycomb-scale;
+        z-index: 2;
+    }
+    .foreverMe_container{
+        position:relative;
+        bottom:3rem*$honeycomb-scale;
+        //padding-left:11rem*$honeycomb-scale;
+        z-index: 2;
+    }
+    
+    .subProjectContainer{
+        position: relative;
+        top: 0.1rem*$honeycomb-scale;
+        left: 4.6rem*$honeycomb-scale;
+        width: auto;
+    }
+    .fmsubProjectContainer {
+        position: relative;
+        left: 0rem*$honeycomb-scale;
+        top:0.3rem*$honeycomb-scale;
+    }
+
+    .oc_api_container {
+        position:absolute;
+        top:4.2rem*$honeycomb-scale;
+        left:0.3rem*$honeycomb-scale;
+        //z-index: 3;
+    }
+    
+    .google_sheet_container {
+        position:absolute;
+        top:4.2rem*$honeycomb-scale;
+        right:9.5rem*$honeycomb-scale;
+
+    }
+    .payPal_container {
+        position:absolute;
+        bottom:10rem*$honeycomb-scale;
+        left:0.5rem*$honeycomb-scale;
+        //z-index:2;
+    }
+
+    .shopify_container {
+        position:absolute;
+        bottom:0.1rem*$honeycomb-scale;
+        left:6.2rem*$honeycomb-scale;
+         //z-index:2;
+
+    }
+
+    .z_index_back {
+        z-index: -1;
+    }
+    .z_index_front {
+        z-index: 3;
+    }
+    .arrow_1_a {
+    position:relative;
+    transform: rotate(15deg);
+    top:2.7rem*$honeycomb-scale;
+    left:7rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .arrow_1_b {
+    position:relative;
+    transform: rotate(140deg);
+    bottom:2.7rem*$honeycomb-scale;
+    right:1.2rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .arrow_2_a {
+    position:relative;
+    transform: rotate(75deg);
+    top:1.8rem*$honeycomb-scale;
+    left:1.66rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .arrow_2_b {
+    position:relative;
+    transform: rotate(15deg);
+    top:0.8rem*$honeycomb-scale;
+    left:7.133rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .arrow_2_c {
+    position:relative;
+    transform: rotate(-105deg);
+    bottom: 9.9rem;
+    left: 19.2rem;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .arrow_2_d {
+    position:relative;
+    transform: rotate(-45deg);
+    bottom:6rem*$honeycomb-scale;
+    left:22rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+
+    .arrow_4_a {
+    position:relative;
+    transform: rotate(-45deg);
+    bottom:3rem*$honeycomb-scale;
+    left:10rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .api_arrows_container {
+    position:relative;
+    bottom: 4.4rem;
+    left:0rem;
+    z-index: 2;
+    }
+
+    .arrow_google_sheet {
+    position:relative;
+    transform: rotate(-100deg);
+    bottom:6rem*$honeycomb-scale;
+    left:7rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .arrow_payPal {
+    position:relative;
+    transform: rotate(-45deg);
+    bottom:2.2rem*$honeycomb-scale;
+    left:9.9rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .arrow_shopify {
+    position:relative;
+    transform: rotate(15deg);
+    top:1.5rem*$honeycomb-scale;
+    left:7rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    .arrow_oc_api {
+    position:relative;
+    transform: rotate(80deg);
+    top:0.5rem*$honeycomb-scale;
+    left:1.5rem*$honeycomb-scale;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem*$honeycomb-scale solid $outer_honeycomb_color_light;
+    border-left: 1rem*$honeycomb-scale solid transparent;   
+    }
+    
+
+    .ssDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .ssVid {
+        display: flex;
+        position: relative;
+        left:0rem;
+        margin-top:0rem;
+        justify-content: space-around;
+    } 
+
+    .mvc_image {
+        margin: 2rem 0rem 2rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .mvc_image img {
+        position: relative;
+        height: 20rem*$honeycomb-scale;
+        width: 25rem*$honeycomb-scale;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mvc_caption {
+        font-size:1.2rem*$honeycomb-scale;
+        color:#abf6ff;
+        position: relative;
+        text-align: center;
+
+    }
+
+    .react_image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;    
+    }
+
+    .react_image img {
+        position: relative;
+        height: 18rem*$honeycomb-scale;
+        width: 20rem*$honeycomb-scale;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subHeading {
+        color:#d5fff8;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem*$honeycomb-scale;
+        font-family: "Fauna One";
+    }
+
+    .subHeading_budget {
+        color:#d5fff8;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem*$honeycomb-scale;
+        font-family: "Fauna One";
+        margin-bottom: 0.5rem;
+    }
+
+    .note{
+        color:#d5fff8;
+        font-size: 1rem*$honeycomb-scale;
+        font-family: "Fauna One";
+    }
+
+    .phpFunctions {
+    margin: 1rem 0rem 1rem 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    }
+
+    .phpFunction {
+        margin: 0.25rem 0rem 0.25rem 0rem;
+    }
+    
+    .sub_headings_mobile {
+        width: 100%;
+        position:absolute;
+        display: flex;
+        flex-direction:row;
+        font-size: 1rem;
+        left: 0rem;
+        top:8rem;
+        color:white;
+        justify-content: space-around;
+    }
+    
+    .php_url{
+        font-size:1rem;
+    }
+    
+    .link {
+        position:relative;
+        //padding-left:0.5rem;
+        //padding-top:0.7rem;
+        //display:flex;
+        //align-items: center;
+        font-size:1rem;
+        
+    }
+    
+    .link img {
+        width:2rem;
+        height:2rem;
+    }
+}
+.link_text {
+    padding-top:0.5rem;
+}

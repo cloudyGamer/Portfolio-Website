@@ -23,7 +23,15 @@ $arrow_color:#4fecff;
 $honeycomb_distance: 1.5;
 $honeycomb_distance_horizontal: $honeycomb_distance*10;
 $baseColor: #00dcff;
-
-    
+//mobile
+$honeycomb-mobile-scale: 8;
+$honeycomb-border-mobile-width: $honeycomb-mobile-scale*0.97;
+$honeycomb_distance_mobile: 1.4;
+$honeycomb_distance_horizontal_mobile: $honeycomb_distance_mobile*10; 
+//mobile single
+$honeycomb-single-scale: 12;
+$honeycomb-border-single-width: $honeycomb-single-scale*0.97;
+$honeycomb_distance_single: 1.4;
+$honeycomb_distance_horizontal_single: $honeycomb_distance_single*10; 
 
 

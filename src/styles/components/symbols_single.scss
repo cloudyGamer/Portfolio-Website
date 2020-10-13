@@ -1,0 +1,38 @@
+
+@media screen and (max-width: 500px){
+
+.symbolsmith {
+top: 0.3rem/10*$honeycomb-single-scale;
+left: 2.3rem/10*$honeycomb-single-scale;
+}
+
+.symbolsmith img {
+height: 5rem/10*$honeycomb-single-scale;
+width: 5rem/10*$honeycomb-single-scale;
+}
+
+.nodejs {
+top: 0.5rem/10*$honeycomb-single-scale;
+left: 2.5rem/10*$honeycomb-single-scale;
+}
+
+.nodejs img {
+height: 5rem/10*$honeycomb-single-scale;
+width: 5rem/10*$honeycomb-single-scale;
+}
+
+.css_logo {
+top: 0.5rem/10*$honeycomb-single-scale;
+left: 2.5rem/10*$honeycomb-single-scale;
+}
+
+.css_logo img {
+height: 5rem/10*$honeycomb-single-scale;
+width: 5rem/10*$honeycomb-single-scale;
+}
+
+.ss_single {
+    padding-left: 9rem;
+    padding-top:5rem;
+}
+}
