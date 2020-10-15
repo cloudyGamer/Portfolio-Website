@@ -30,13 +30,13 @@ export const foreverMeDescription = () => (
                     <div className='subHeading'> Features</div>
                     <p>
                     It was important that the final product required no coding from my employer. The software automatically
-                    searches for natural ingredients and highlightes them in green with some ingredients displayed with 
+                    searches for natural ingredients and highlights them in green with some ingredients displayed with 
                     graphics and descriptions of it's natural therapeutic uses. Each product category has different css considerations, such as
                     image height which are dealt with automatically.
                     </p>
                     <p>
                     The previous website had a laborious payment process whereby many
-                    personal details had to be rentered. The new payment process saves and remembers details such as address, name and email
+                    personal details had to be reentered. The new payment process saves and remembers details such as address, name and email
                     and automatically enters the billing address as shipping address as default. All payment details and personal information
                     are then validated. The information is then sent to 
                     PayPal via the API which ,for security purposes, handles the card payment details. Integration with the PayPal API
@@ -46,7 +46,7 @@ export const foreverMeDescription = () => (
                     <p>I created the ability to pull product data from the existing Shopify store and upload it en-mass to
                          Opencart. The OpenCart API was altered to allow en-mass uploading of products.
                     </p>
-                    <p>The website is optmised for both desktop and mobile use</p>
+                    <p>The website is optimised for both desktop and mobile use</p>
                     <p>
                     I also managed the advertising of the store across google ads and merchant centre; running multiple campaigns and
                     ensuring that the most cost effective keywords and bidding prices were used. Our ads were consistently
@@ -71,16 +71,16 @@ export const foreverMeDescription = () => (
                     <p>The front end requests are made using fetch and the ansychronicity of the
                      promises handled with Await. Requests are sent to PHP files which access the OpenCart MVC via cURL. Requests
                      forward the parameters and the corresponding OpenCart route url packaged within FormData. The cURL request then
-                     attatches the parameters to the route url e.g</p>
+                     attaches the parameters to the route url e.g</p>
                      <p className="php_url">index.php?route=/api/shipping/methods&api_token=343sdd44454</p>
                      <p>The correct handling of ansynchronous calls is essential to the app as many OpenCart functions are reliant on the
                      output of previous ones to function e.g payments cannot be processed without postage type having been selected
-                     ; which in itself in preceeded by supply of a valid shipping address. Seperate PHP functions -
+                     ; which in itself in preceeded by supply of a valid shipping address. Separate PHP functions -
                     </p>
                     <div className='flex_center'>
                          <div className='phpFunctions'>
                          <div className="phpFunction">&#8226; Generates an API user token to allow customer tracking</div>
-                         <div className="phpFunction">&#8226; and access to to OpenCarts API and functions</div>
+                         <div className="phpFunction">&#8226; and access to to OpenCart's API and functions</div>
                          <div className="phpFunction">&#8226; Get product categories</div>
                          <div className="phpFunction">&#8226; Get products corresponding to categories</div>
                          <div className="phpFunction">&#8226; Add item to cart</div>
@@ -106,7 +106,7 @@ export const foreverMeDescription = () => (
                     </div>
 
                     <div>You can visit the GitHub link and view commit history to see the changes made to the OpenCart backend. 
-                    Notable file/folders are Uploaded which contains php files handling all of the requests coming from the front end and
+                    Notable file/folders are uploaded which contains php files handling all of the requests coming from the front end and
                     connects them with PHP functions (previously existing, modified or created) in the back end). Only files that were added,
                     modified or demonstrate understanding of the backend have been uploaded.
                     </div>

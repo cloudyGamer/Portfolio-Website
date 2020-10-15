@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="74"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="79">
+        <file>
+            <url>src/styles/components/homePage.scss</url>
+            <bookmark id="79">
+                <name/>
+                <line>93</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/styles/components/homePage_mobile.scss</url>
+            <bookmark id="76">
+                <name/>
+                <line>11</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/HomePage.js</url>
+            <bookmark id="78">
+                <name/>
+                <line>367</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/pol/Documents/react-course-projects/portfolio_2/src/components/projectContent.js</file>
-            <file>file:/Users/pol/Documents/react-course-projects/portfolio_2/src/app.js</file>
-            <file>file:/Users/pol/Documents/react-course-projects/portfolio_2/nbproject/customs.json</file>
-            <file>file:/Users/pol/Documents/react-course-projects/portfolio_2/src/styles/components/homePage.scss</file>
             <file>file:/Users/pol/Documents/react-course-projects/portfolio_2/src/components/HomePage.js</file>
+            <file>file:/Users/pol/Documents/react-course-projects/portfolio_2/src/styles/components/homePage_mobile.scss</file>
         </group>
     </open-files>
 </project-private>
