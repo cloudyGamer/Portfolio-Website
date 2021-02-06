@@ -80,7 +80,7 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
                     },
                     {
                          title:"Node JS",
-                         briefBody: "A simple note taking app and weather display app.",
+                         briefBody: "The Task Manager App",
                          body: nodeAppDescription(),
                          className: "outer_hexagon_light",
                          leadClassName:"hexagon_light"
@@ -721,7 +721,7 @@ this.refs = [this.foreverMe,this.github_1,this.budget,this.redux,this.jest,
           <div>
                <div className='flex_fm' style={{marginTop:"5.5rem"}}>
                     <div className="hexagons_single_container mouseOver"  
-                         onClick={()=>this.windowOpen('https://github.com/cloudyGamer/Node-Apps')}>
+                         onClick={()=>this.windowOpen('https://github.com/cloudyGamer/Task-Manager')}>
                          <div className="outer_hexagon_single_container">
                               <div className="outer_hexagon_single"></div>
                          </div>

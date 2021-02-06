@@ -241,13 +241,20 @@ export const budgetAppDescription = () => (
                <div className='subHeading'>General</div>
                <div className='flex_center'>
                     <div className='phpFunctions'>
-                    <div className="phpFunction">&#8226;Routing</div>
+                    <div className="phpFunction">&#8226;Firebase </div>
+                    <div className="phpFunction">&#8226;Private/Public Routes</div>
+                    <div className="phpFunction">&#8226;Login in/out</div>
+                    <div className="phpFunction">&#8226;Google Authentication</div>
+                    <div className="phpFunction">&#8226;Firebase Authentication</div>
+                    <div className="phpFunction">&#8226;Firebase Data Validation</div>
+                    <div className="phpFunction">&#8226;Environmental Variables</div>
                     <div className="phpFunction">&#8226;ES6 Object and Array Destructuring</div>
                     <div className="phpFunction">&#8226;Implicitly returned JSX </div>
                     <div className="phpFunction">&#8226;Sass </div>
-                    <div className="phpFunction">&#8226; Deployment via Heroku and Node</div>
-                    <div className="phpFunction">&#8226; Libraries used include Moment</div>
-                    <div className="phpFunction">&#8226; contains server, development version and production version for fast deployment and local testing</div>
+                    <div className="phpFunction">&#8226;Deployment via Heroku and Node</div>
+                    <div className="phpFunction">&#8226;Libraries used include Moment</div>
+                    <div className="phpFunction">&#8226;Contains server, development version and production version for fast deployment and local testing</div>
+
                     </div>
                </div>
                
@@ -261,6 +268,9 @@ export const budgetAppDescription = () => (
                     <div className="phpFunction">&#8226; Combiner</div>
                     <div className="phpFunction">&#8226; Selectors</div>
                     <div className="phpFunction">&#8226; Connected Store</div>
+                    <div className="phpFunction">&#8226; Redux working with Firebase</div>
+                    <div className="phpFunction">&#8226; Mapped Sate to Props</div>
+                    
                     </div>
                </div>
                
@@ -269,6 +279,11 @@ export const budgetAppDescription = () => (
                <div className='flex_budget'>
                     <div className='phpFunctions jest_list'>
                     <div className="phpFunction">&#8226; Fixtures</div>
+                    <div className="phpFunction">&#8226; Snapshot Testing</div>
+                    <div className="phpFunction">&#8226; Promise Chaining</div>
+                    <div className="phpFunction">&#8226; Testing of Asynchronous Calls</div>
+                    <div className="phpFunction">&#8226; Testing of Firebase Redux integration</div>
+                    <div className="phpFunction">&#8226; Seperate Firebase Database for Testing</div>
                     <div className="phpFunction">&#8226; Mocked Libraries</div>
                     <div className="phpFunction">&#8226; Snapshot testing</div>
                     <div className="phpFunction">&#8226; Spies</div>
@@ -291,9 +306,27 @@ export const nodeAppDescription = () => (
         <div className='subHeading'>Features</div>
         <div className='flex_center'>
           <div className='phpFunctions'>
+               <div className="phpFunction">&#8226;Mongoose Populate,Virtual, Ref</div>
+               <div className="phpFunction">&#8226;Mongodb</div>
+               <div className="phpFunction">&#8226;Securely Stored Passwords (bcryptjs)</div>
+               <div className="phpFunction">&#8226;Async/Await</div>
+               <div className="phpFunction">&#8226;Resource Creation/Reading Endpoints</div>
+               <div className="phpFunction">&#8226;Scalable Directory Structures</div>
+               <div className="phpFunction">&#8226;MongoDb Model Creation</div>
+               <div className="phpFunction">&#8226;Data Validation And Sanitisation</div>
+               <div className="phpFunction">&#8226;JSON Web Tokens</div>
+               <div className="phpFunction">&#8226;Version Control</div>
+               <div className="phpFunction">&#8226;Default Parameters</div>
+               <div className="phpFunction">&#8226;Express Query Handling</div>
+               <div className="phpFunction">&#8226;Connecting Browser With Api</div>
+               <div className="phpFunction">&#8226;Js End Points</div>
+               <div className="phpFunction">&#8226;Express Web Server</div>
+               <div className="phpFunction">&#8226;Routing</div>
+               <div className="phpFunction">&#8226;Handlebar</div>
+               <div className="phpFunction">&#8226;Partials</div>
                <div className="phpFunction">&#8226;Handling User Input</div>
                <div className="phpFunction">&#8226;Argument parsing with Yargs</div>
-               <div className="phpFunction">&#8226;Creating, reading, listing and removing user notes</div>
+               <div className="phpFunction">&#8226;Creating, reading, listing and removing user tasks</div>
                <div className="phpFunction">&#8226;Debugging</div>
                <div className="phpFunction">&#8226;Asynchronous API calls</div>
                <div className="phpFunction">&#8226;Modules</div>
